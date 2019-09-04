@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>RootMutationType</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="RootQueryType">
+            <a href="rootquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RootQueryType
+            </a>
+        </li>
+        <li class="slds-is-active" title="RootMutationType">
+            <a href="rootmutationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RootMutationType
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="CentralMxDate">
+            <a href="centralmxdate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CentralMxDate
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="Json">
+            <a href="json.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Json
+            </a>
+        </li>
+        <li  title="Money">
+            <a href="money.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Money
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+        <li  title="Upload">
+            <a href="upload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Upload
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ActiveState">
+            <a href="activestate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActiveState
+            </a>
+        </li>
+        <li  title="AmountType">
+            <a href="amounttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AmountType
+            </a>
+        </li>
+        <li  title="BaseModeEnum">
+            <a href="basemodeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BaseModeEnum
+            </a>
+        </li>
+        <li  title="ChannelEnum">
+            <a href="channelenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChannelEnum
+            </a>
+        </li>
+        <li  title="ChannelType">
+            <a href="channeltype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChannelType
+            </a>
+        </li>
+        <li  title="DetailTypeEnum">
+            <a href="detailtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DetailTypeEnum
+            </a>
+        </li>
+        <li  title="IntegrationAction">
+            <a href="integrationaction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IntegrationAction
+            </a>
+        </li>
+        <li  title="IntegrationType">
+            <a href="integrationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IntegrationType
+            </a>
+        </li>
+        <li  title="ParameterNameEnum">
+            <a href="parameternameenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ParameterNameEnum
+            </a>
+        </li>
+        <li  title="PreloadState">
+            <a href="preloadstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PreloadState
+            </a>
+        </li>
+        <li  title="ProductMode">
+            <a href="productmode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProductMode
+            </a>
+        </li>
+        <li  title="PromotionModeEnum">
+            <a href="promotionmodeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionModeEnum
+            </a>
+        </li>
+        <li  title="PromotionTypeEnum">
+            <a href="promotiontypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionTypeEnum
+            </a>
+        </li>
+        <li  title="RateChannelStatus">
+            <a href="ratechannelstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelStatus
+            </a>
+        </li>
+        <li  title="RateKindEnum">
+            <a href="ratekindenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateKindEnum
+            </a>
+        </li>
+        <li  title="ResourceEnum">
+            <a href="resourceenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResourceEnum
+            </a>
+        </li>
+        <li  title="ServiceNameEnum">
+            <a href="servicenameenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ServiceNameEnum
+            </a>
+        </li>
+        <li  title="SortOrder">
+            <a href="sortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SortOrder
+            </a>
+        </li>
+        <li  title="TourChannelStatus">
+            <a href="tourchannelstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelStatus
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="Account">
+            <a href="account.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Account
+            </a>
+        </li>
+        <li  title="ActivityDetail">
+            <a href="activitydetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityDetail
+            </a>
+        </li>
+        <li  title="ActivityGroup">
+            <a href="activitygroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityGroup
+            </a>
+        </li>
+        <li  title="Affiliate">
+            <a href="affiliate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Affiliate
+            </a>
+        </li>
+        <li  title="ApplicationExternalTour">
+            <a href="applicationexternaltour.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationExternalTour
+            </a>
+        </li>
+        <li  title="Availability">
+            <a href="availability.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Availability
+            </a>
+        </li>
+        <li  title="AvailabilityDay">
+            <a href="availabilityday.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AvailabilityDay
+            </a>
+        </li>
+        <li  title="BaseRate">
+            <a href="baserate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BaseRate
+            </a>
+        </li>
+        <li  title="Branch">
+            <a href="branch.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Branch
+            </a>
+        </li>
+        <li  title="Currency">
+            <a href="currency.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Currency
+            </a>
+        </li>
+        <li  title="ExchangeRate">
+            <a href="exchangerate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExchangeRate
+            </a>
+        </li>
+        <li  title="ExternalTour">
+            <a href="externaltour.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExternalTour
+            </a>
+        </li>
+        <li  title="Language">
+            <a href="language.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Language
+            </a>
+        </li>
+        <li  title="Media">
+            <a href="media.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Media
+            </a>
+        </li>
+        <li  title="PlatformParameter">
+            <a href="platformparameter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformParameter
+            </a>
+        </li>
+        <li  title="Promotion">
+            <a href="promotion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Promotion
+            </a>
+        </li>
+        <li  title="PromotionBaseRate">
+            <a href="promotionbaserate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionBaseRate
+            </a>
+        </li>
+        <li  title="ProviderIntegration">
+            <a href="providerintegration.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProviderIntegration
+            </a>
+        </li>
+        <li  title="Rate">
+            <a href="rate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Rate
+            </a>
+        </li>
+        <li  title="RateChannel">
+            <a href="ratechannel.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannel
+            </a>
+        </li>
+        <li  title="RateChannelConfigItem">
+            <a href="ratechannelconfigitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigItem
+            </a>
+        </li>
+        <li  title="RateChannelConfigs">
+            <a href="ratechannelconfigs.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigs
+            </a>
+        </li>
+        <li  title="RateMode">
+            <a href="ratemode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateMode
+            </a>
+        </li>
+        <li  title="RateOverSpecific">
+            <a href="rateoverspecific.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateOverSpecific
+            </a>
+        </li>
+        <li  title="RatePassengerSpecific">
+            <a href="ratepassengerspecific.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RatePassengerSpecific
+            </a>
+        </li>
+        <li  title="RateSeason">
+            <a href="rateseason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateSeason
+            </a>
+        </li>
+        <li  title="RateType">
+            <a href="ratetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateType
+            </a>
+        </li>
+        <li  title="RateTypeConfigs">
+            <a href="ratetypeconfigs.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateTypeConfigs
+            </a>
+        </li>
+        <li  title="Role">
+            <a href="role.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Role
+            </a>
+        </li>
+        <li  title="ServiceOption">
+            <a href="serviceoption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ServiceOption
+            </a>
+        </li>
+        <li  title="Tariff">
+            <a href="tariff.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tariff
+            </a>
+        </li>
+        <li  title="Tour">
+            <a href="tour.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tour
+            </a>
+        </li>
+        <li  title="TourChannel">
+            <a href="tourchannel.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannel
+            </a>
+        </li>
+        <li  title="TourChannelConfig">
+            <a href="tourchannelconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelConfig
+            </a>
+        </li>
+        <li  title="TourProvider">
+            <a href="tourprovider.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourProvider
+            </a>
+        </li>
+        <li  title="ToursConfiguration">
+            <a href="toursconfiguration.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ToursConfiguration
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="AccountFilter">
+            <a href="accountfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AccountFilter
+            </a>
+        </li>
+        <li  title="AccountInput">
+            <a href="accountinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AccountInput
+            </a>
+        </li>
+        <li  title="ActivityDetailFilter">
+            <a href="activitydetailfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityDetailFilter
+            </a>
+        </li>
+        <li  title="ActivityDetailInput">
+            <a href="activitydetailinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityDetailInput
+            </a>
+        </li>
+        <li  title="ActivityGroupFilter">
+            <a href="activitygroupfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityGroupFilter
+            </a>
+        </li>
+        <li  title="ActivityGroupInput">
+            <a href="activitygroupinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActivityGroupInput
+            </a>
+        </li>
+        <li  title="AffiliateFilter">
+            <a href="affiliatefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AffiliateFilter
+            </a>
+        </li>
+        <li  title="AffiliateInput">
+            <a href="affiliateinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AffiliateInput
+            </a>
+        </li>
+        <li  title="ApplicationExternalTourInput">
+            <a href="applicationexternaltourinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationExternalTourInput
+            </a>
+        </li>
+        <li  title="AvailabilityDayFilter">
+            <a href="availabilitydayfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AvailabilityDayFilter
+            </a>
+        </li>
+        <li  title="AvailabilityDayInput">
+            <a href="availabilitydayinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AvailabilityDayInput
+            </a>
+        </li>
+        <li  title="AvailabilityFilter">
+            <a href="availabilityfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AvailabilityFilter
+            </a>
+        </li>
+        <li  title="AvailabilityInput">
+            <a href="availabilityinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AvailabilityInput
+            </a>
+        </li>
+        <li  title="BaseRateFilter">
+            <a href="baseratefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BaseRateFilter
+            </a>
+        </li>
+        <li  title="BaseRateInput">
+            <a href="baserateinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BaseRateInput
+            </a>
+        </li>
+        <li  title="BranchFilter">
+            <a href="branchfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BranchFilter
+            </a>
+        </li>
+        <li  title="BranchInput">
+            <a href="branchinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BranchInput
+            </a>
+        </li>
+        <li  title="BranchRateChannelFilter">
+            <a href="branchratechannelfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BranchRateChannelFilter
+            </a>
+        </li>
+        <li  title="ChannelFilter">
+            <a href="channelfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ChannelFilter
+            </a>
+        </li>
+        <li  title="CreditToBranchInput">
+            <a href="credittobranchinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CreditToBranchInput
+            </a>
+        </li>
+        <li  title="CurrencyInput">
+            <a href="currencyinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyInput
+            </a>
+        </li>
+        <li  title="DatesFilter">
+            <a href="datesfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DatesFilter
+            </a>
+        </li>
+        <li  title="ExchangeRateFilter">
+            <a href="exchangeratefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExchangeRateFilter
+            </a>
+        </li>
+        <li  title="ExchangeRatesInput">
+            <a href="exchangeratesinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExchangeRatesInput
+            </a>
+        </li>
+        <li  title="ExternalApplicationFilter">
+            <a href="externalapplicationfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExternalApplicationFilter
+            </a>
+        </li>
+        <li  title="ExternalTourFilter">
+            <a href="externaltourfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExternalTourFilter
+            </a>
+        </li>
+        <li  title="ExternalTourInput">
+            <a href="externaltourinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ExternalTourInput
+            </a>
+        </li>
+        <li  title="InputRateOverSpecific">
+            <a href="inputrateoverspecific.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputRateOverSpecific
+            </a>
+        </li>
+        <li  title="InputRatePassengerSpecific">
+            <a href="inputratepassengerspecific.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputRatePassengerSpecific
+            </a>
+        </li>
+        <li  title="MediaDeleteInput">
+            <a href="mediadeleteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaDeleteInput
+            </a>
+        </li>
+        <li  title="MediaTourInput">
+            <a href="mediatourinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MediaTourInput
+            </a>
+        </li>
+        <li  title="PlatformParameterFilter">
+            <a href="platformparameterfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformParameterFilter
+            </a>
+        </li>
+        <li  title="PlatformParameterInput">
+            <a href="platformparameterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PlatformParameterInput
+            </a>
+        </li>
+        <li  title="PromotionBaseRateFilter">
+            <a href="promotionbaseratefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionBaseRateFilter
+            </a>
+        </li>
+        <li  title="PromotionBaseRateInput">
+            <a href="promotionbaserateinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionBaseRateInput
+            </a>
+        </li>
+        <li  title="PromotionFilter">
+            <a href="promotionfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionFilter
+            </a>
+        </li>
+        <li  title="PromotionInput">
+            <a href="promotioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PromotionInput
+            </a>
+        </li>
+        <li  title="RateChannelConfigItemFilter">
+            <a href="ratechannelconfigitemfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigItemFilter
+            </a>
+        </li>
+        <li  title="RateChannelConfigItemInput">
+            <a href="ratechannelconfigiteminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigItemInput
+            </a>
+        </li>
+        <li  title="RateChannelConfigsFilter">
+            <a href="ratechannelconfigsfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigsFilter
+            </a>
+        </li>
+        <li  title="RateChannelConfigsInput">
+            <a href="ratechannelconfigsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelConfigsInput
+            </a>
+        </li>
+        <li  title="RateChannelFilter">
+            <a href="ratechannelfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelFilter
+            </a>
+        </li>
+        <li  title="RateChannelInput">
+            <a href="ratechannelinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateChannelInput
+            </a>
+        </li>
+        <li  title="RateModeFilter">
+            <a href="ratemodefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateModeFilter
+            </a>
+        </li>
+        <li  title="RateModeInput">
+            <a href="ratemodeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateModeInput
+            </a>
+        </li>
+        <li  title="RatePassengerSpecificFilter">
+            <a href="ratepassengerspecificfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RatePassengerSpecificFilter
+            </a>
+        </li>
+        <li  title="RateSeasonInput">
+            <a href="rateseasoninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateSeasonInput
+            </a>
+        </li>
+        <li  title="RateTypeConfigsInput">
+            <a href="ratetypeconfigsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateTypeConfigsInput
+            </a>
+        </li>
+        <li  title="RateTypeFilter">
+            <a href="ratetypefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateTypeFilter
+            </a>
+        </li>
+        <li  title="RateTypeInput">
+            <a href="ratetypeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RateTypeInput
+            </a>
+        </li>
+        <li  title="RoleFilter">
+            <a href="rolefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleFilter
+            </a>
+        </li>
+        <li  title="ServiceOptionFilter">
+            <a href="serviceoptionfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ServiceOptionFilter
+            </a>
+        </li>
+        <li  title="ServiceOptionInput">
+            <a href="serviceoptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ServiceOptionInput
+            </a>
+        </li>
+        <li  title="TariffFilter">
+            <a href="tarifffilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TariffFilter
+            </a>
+        </li>
+        <li  title="TourChannelConfigFilter">
+            <a href="tourchannelconfigfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelConfigFilter
+            </a>
+        </li>
+        <li  title="TourChannelConfigInput">
+            <a href="tourchannelconfiginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelConfigInput
+            </a>
+        </li>
+        <li  title="TourChannelFilter">
+            <a href="tourchannelfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelFilter
+            </a>
+        </li>
+        <li  title="TourChannelInput">
+            <a href="tourchannelinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourChannelInput
+            </a>
+        </li>
+        <li  title="TourFilter">
+            <a href="tourfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourFilter
+            </a>
+        </li>
+        <li  title="TourInput">
+            <a href="tourinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourInput
+            </a>
+        </li>
+        <li  title="TourProviderFilter">
+            <a href="tourproviderfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourProviderFilter
+            </a>
+        </li>
+        <li  title="TourProviderInput">
+            <a href="tourproviderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TourProviderInput
+            </a>
+        </li>
+        <li  title="ToursConfigurationFilter">
+            <a href="toursconfigurationfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ToursConfigurationFilter
+            </a>
+        </li>
+        <li  title="UserBranchesInput">
+            <a href="userbranchesinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserBranchesInput
+            </a>
+        </li>
+        <li  title="UserFilter">
+            <a href="userfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFilter
+            </a>
+        </li>
+        <li  title="UserInput">
+            <a href="userinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">RootMutationType</h1>
+        <div class="slds-text-body--regular"></div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">type</span> <span class="identifier">RootMutationType</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Update external tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateExternalTour</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="externaltourinput.doc.html">ExternalTourInput</a>!): <a class="support type" href="externaltour.doc.html">ExternalTour</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update branch</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateBranch</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="branchinput.doc.html">BranchInput</a>!): <a class="support type" href="branch.doc.html">Branch</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Add Configuration to Tour Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">addTourChannelConfig</span>(<span class="meta">input</span>: <a class="support type" href="tourchannelconfiginput.doc.html">TourChannelConfigInput</a>!): <a class="support type" href="tourchannelconfig.doc.html">TourChannelConfig</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create external tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createExternalTour</span>(<span class="meta">input</span>: <a class="support type" href="externaltourinput.doc.html">ExternalTourInput</a>!): <a class="support type" href="externaltour.doc.html">ExternalTour</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Set base rate</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tourId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveBaseRates</span>(<span class="meta">input</span>: [<a class="support type" href="baserateinput.doc.html">BaseRateInput</a>]!, <span class="meta">tourId</span>: <a class="support type" href="id.doc.html">ID</a>!): <a class="support type" href="tour.doc.html">Tour</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Rate Mode</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createRateMode</span>(<span class="meta">input</span>: <a class="support type" href="ratemodeinput.doc.html">RateModeInput</a>!): <a class="support type" href="ratemode.doc.html">RateMode</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   create base rate with seasons</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createBaseRateWithSeasons</span>(<span class="meta">input</span>: <a class="support type" href="baserateinput.doc.html">BaseRateInput</a>!): <a class="support type" href="baserate.doc.html">BaseRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update promotion with details</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updatePromotionWithDetails</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="promotioninput.doc.html">PromotionInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="promotion.doc.html">Promotion</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Upload media to Tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">uploadTourMedia</span>(<span class="meta">input</span>: <a class="support type" href="mediatourinput.doc.html">MediaTourInput</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Exchange Rates</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateExchangeRate</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="exchangeratesinput.doc.html">ExchangeRatesInput</a>!): <a class="support type" href="exchangerate.doc.html">ExchangeRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create branch</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createBranch</span>(<span class="meta">input</span>: <a class="support type" href="branchinput.doc.html">BranchInput</a>!): <a class="support type" href="branch.doc.html">Branch</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update activity group</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateActivityGroup</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="activitygroupinput.doc.html">ActivityGroupInput</a>!): <a class="support type" href="activitygroup.doc.html">ActivityGroup</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create activity group</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createActivityGroup</span>(<span class="meta">input</span>: <a class="support type" href="activitygroupinput.doc.html">ActivityGroupInput</a>!): <a class="support type" href="activitygroup.doc.html">ActivityGroup</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create promotion</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createPromotion</span>(<span class="meta">input</span>: <a class="support type" href="promotioninput.doc.html">PromotionInput</a>!): <a class="support type" href="promotion.doc.html">Promotion</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update user branches</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateUserBranches</span>(<span class="meta">input</span>: <a class="support type" href="userbranchesinput.doc.html">UserBranchesInput</a>!): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Rate Channel Config</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateRateChannelConfig</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="ratechannelconfigsinput.doc.html">RateChannelConfigsInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="ratechannelconfigs.doc.html">RateChannelConfigs</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update account</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateAccount</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="accountinput.doc.html">AccountInput</a>!): <a class="support type" href="account.doc.html">Account</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create tour provider</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createTourProvider</span>(<span class="meta">input</span>: <a class="support type" href="tourproviderinput.doc.html">TourProviderInput</a>!): <a class="support type" href="tourprovider.doc.html">TourProvider</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Delete passenger specific</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ratePassengerSpecificId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">deletePassengerSpecific</span>(<span class="meta">ratePassengerSpecificId</span>: <a class="support type" href="id.doc.html">ID</a>!): <a class="support type" href="ratepassengerspecific.doc.html">RatePassengerSpecific</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update tour provider</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateTourProvider</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="tourproviderinput.doc.html">TourProviderInput</a>!): <a class="support type" href="tourprovider.doc.html">TourProvider</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Exchange Rates</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createExchangeRate</span>(<span class="meta">input</span>: <a class="support type" href="exchangeratesinput.doc.html">ExchangeRatesInput</a>!): <a class="support type" href="exchangerate.doc.html">ExchangeRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update activity detail</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateActivityDetail</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="activitydetailinput.doc.html">ActivityDetailInput</a>!): <a class="support type" href="activitydetail.doc.html">ActivityDetail</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Tour Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createTourChannel</span>(<span class="meta">input</span>: <a class="support type" href="tourchannelinput.doc.html">TourChannelInput</a>!): <a class="support type" href="tourchannel.doc.html">TourChannel</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Rate Type</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createRateType</span>(<span class="meta">input</span>: <a class="support type" href="ratetypeinput.doc.html">RateTypeInput</a>!): <a class="support type" href="ratetype.doc.html">RateType</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save passenger specific</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>inputConfigItem</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>rateChannelConfigId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">savePassengerSpecific</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: [<a class="support type" href="inputratepassengerspecific.doc.html">InputRatePassengerSpecific</a>]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">inputConfigItem</span>: <a class="support type" href="ratechannelconfigiteminput.doc.html">RateChannelConfigItemInput</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">rateChannelConfigId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="ratepassengerspecific.doc.html">RatePassengerSpecific</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Tour Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateTourChannel</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="tourchannelinput.doc.html">TourChannelInput</a>!): <a class="support type" href="tourchannel.doc.html">TourChannel</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create affiliate</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createAffiliate</span>(<span class="meta">input</span>: <a class="support type" href="affiliateinput.doc.html">AffiliateInput</a>!): <a class="support type" href="affiliate.doc.html">Affiliate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   update base rate with seasons</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateBaseRateWithSeasons</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="baserateinput.doc.html">BaseRateInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="baserate.doc.html">BaseRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Rate Channel Config</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createRateChannelConfig</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="ratechannelconfigsinput.doc.html">RateChannelConfigsInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="ratechannelconfigs.doc.html">RateChannelConfigs</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create list of Exchange Rates</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createExchangeRateList</span>(<span class="meta">input</span>: [<a class="support type" href="exchangeratesinput.doc.html">ExchangeRatesInput</a>]!): [<a class="support type" href="exchangerate.doc.html">ExchangeRate</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   create rate season</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createRateSeason</span>(<span class="meta">input</span>: <a class="support type" href="rateseasoninput.doc.html">RateSeasonInput</a>!): <a class="support type" href="rateseason.doc.html">RateSeason</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateTour</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="tourinput.doc.html">TourInput</a>!): <a class="support type" href="tour.doc.html">Tour</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Rate Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createRateChannel</span>(<span class="meta">input</span>: <a class="support type" href="ratechannelinput.doc.html">RateChannelInput</a>!): <a class="support type" href="ratechannel.doc.html">RateChannel</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   update rate season</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateRateSeason</span>(<span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">input</span>: <a class="support type" href="rateseasoninput.doc.html">RateSeasonInput</a>!): <a class="support type" href="rateseason.doc.html">RateSeason</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Rate Mode</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateRateMode</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="ratemodeinput.doc.html">RateModeInput</a>!): <a class="support type" href="ratemode.doc.html">RateMode</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save over specific</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>rateChannelConfigItemId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveOverSpecific</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: [<a class="support type" href="inputrateoverspecific.doc.html">InputRateOverSpecific</a>]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">rateChannelConfigItemId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="rateoverspecific.doc.html">RateOverSpecific</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   delete activity detail</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">deleteBaseRate</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="baserate.doc.html">BaseRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateUser</span>(<span class="meta">input</span>: <a class="support type" href="userinput.doc.html">UserInput</a>!): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save Rate Channel Config percentage</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>rateChannelConfigId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveRateTypeConfig</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: [<a class="support type" href="ratetypeconfigsinput.doc.html">RateTypeConfigsInput</a>]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">rateChannelConfigId</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="ratetypeconfigs.doc.html">RateTypeConfigs</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Delete media</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">deleteMedia</span>(<span class="meta">input</span>: <a class="support type" href="mediadeleteinput.doc.html">MediaDeleteInput</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save credit to branch</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveCreditToBranch</span>(<span class="meta">input</span>: <a class="support type" href="credittobranchinput.doc.html">CreditToBranchInput</a>!): <a class="support type" href="branch.doc.html">Branch</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update affiliate</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateAffiliate</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="affiliateinput.doc.html">AffiliateInput</a>!): <a class="support type" href="affiliate.doc.html">Affiliate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save Platform Parameter</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">savePlatformParameter</span>(<span class="meta">input</span>: <a class="support type" href="platformparameterinput.doc.html">PlatformParameterInput</a>!): <a class="support type" href="platformparameter.doc.html">PlatformParameter</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create account</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createAccount</span>(<span class="meta">input</span>: <a class="support type" href="accountinput.doc.html">AccountInput</a>!): <a class="support type" href="account.doc.html">Account</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   delete activity detail</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">deleteActivityDetail</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="activitydetail.doc.html">ActivityDetail</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update promotion</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updatePromotion</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="promotioninput.doc.html">PromotionInput</a>!): <a class="support type" href="promotion.doc.html">Promotion</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create activity detail</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createActivityDetail</span>(<span class="meta">input</span>: <a class="support type" href="activitydetailinput.doc.html">ActivityDetailInput</a>!): <a class="support type" href="activitydetail.doc.html">ActivityDetail</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save Service Option</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveServiceOption</span>(<span class="meta">input</span>: <a class="support type" href="serviceoptioninput.doc.html">ServiceOptionInput</a>!): <a class="support type" href="serviceoption.doc.html">ServiceOption</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Configuration to Tour Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateTourChannelConfig</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="tourchannelconfiginput.doc.html">TourChannelConfigInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="tourchannelconfig.doc.html">TourChannelConfig</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Currency</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createCurrency</span>(<span class="meta">input</span>: <a class="support type" href="currencyinput.doc.html">CurrencyInput</a>!): <a class="support type" href="currency.doc.html">Currency</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update list of Exchange Rates</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateExchangeRateList</span>(<span class="meta">input</span>: [<a class="support type" href="exchangeratesinput.doc.html">ExchangeRatesInput</a>]!): <a class="support type" href="exchangerate.doc.html">ExchangeRate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Availability Day</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateAvailabilityDay</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: <a class="support type" href="availabilitydayinput.doc.html">AvailabilityDayInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="availabilityday.doc.html">AvailabilityDay</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Bulk edit application external tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>filter</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">bulkEditExternalToursMappers</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">filter</span>: <a class="support type" href="externalapplicationfilter.doc.html">ExternalApplicationFilter</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: [<a class="support type" href="applicationexternaltourinput.doc.html">ApplicationExternalTourInput</a>]!</span></span></li><li><span class="tab">): <a class="support type" href="externaltour.doc.html">ExternalTour</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Save Rate Channel Config items</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>rateChannelConfigId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">saveRateChannelConfigItems</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">input</span>: [<a class="support type" href="ratechannelconfigiteminput.doc.html">RateChannelConfigItemInput</a>]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">rateChannelConfigId</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="ratechannelconfigitem.doc.html">RateChannelConfigItem</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Set promotion base rate of provider</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>baseRateInput</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>promotionId</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>promotionInput</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">savePromotionBaseRates</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">baseRateInput</span>: [<a class="support type" href="promotionbaserateinput.doc.html">PromotionBaseRateInput</a>]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">promotionId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">promotionInput</span>: <a class="support type" href="promotioninput.doc.html">PromotionInput</a>!</span></span></li><li><span class="tab">): <a class="support type" href="promotion.doc.html">Promotion</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Update Rate Channel</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">updateRateChannel</span>(<span class="meta">id</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">input</span>: <a class="support type" href="ratechannelinput.doc.html">RateChannelInput</a>!): <a class="support type" href="ratechannel.doc.html">RateChannel</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create Availability</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createAvailability</span>(<span class="meta">input</span>: <a class="support type" href="availabilityinput.doc.html">AvailabilityInput</a>!): <a class="support type" href="availability.doc.html">Availability</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create tour</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>input</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">createTour</span>(<span class="meta">input</span>: <a class="support type" href="tourinput.doc.html">TourInput</a>!): <a class="support type" href="tour.doc.html">Tour</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <div class="require-by anyone">This element is not required by anyone</div>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
